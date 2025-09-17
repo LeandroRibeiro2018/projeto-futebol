@@ -1,0 +1,123 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #000, #8B0000);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #ff0000;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.config, .quiz {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.8);
+  border: 2px solid #ff0000;
+}
+
+input, select, button {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+}
+
+button {
+  background: #ff0000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #cc0000;
+}
+
+.fifa-card {
+  width: 280px;
+  height: 420px;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 15px gold;
+}
+
+.fifa-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 30px;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.overall {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.posicao {
+  position: absolute;
+  top: 70px;
+  left: 25px;
+  font-size: 18px;
+}
+
+.nome {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.clube, .nacionalidade {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+#downloadBtn {
+  display: none;
+  margin-top: 15px;
+}
+
+/* Cartas estilo FIFA */
+.carta-ouro {
+  background: linear-gradient(180deg, #d4af37, #c5a028);
+  color: #000;
+}
+
+.carta-prata {
+  background: linear-gradient(180deg, #c0c0c0, #a9a9a9);
+  color: #000;
+}
+
+.carta-bronze {
+  background: linear-gradient(180deg, #cd7f32, #a0522d);
+  color: #000;
+}
+.carta-elite {
+  background: linear-gradient(180deg, #e5e4e2, #d4d3d2);
+  color: #000;
+}

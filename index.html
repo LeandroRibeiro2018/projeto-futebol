@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta FIFA - Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gerador de Carta FIFA</h1>
+
+  <div id="config" class="config">
+    <h2>Crie seu Jogador</h2>
+    <input type="text" id="nomeJogador" placeholder="Digite o nome (ou deixe vazio)">
+    
+    <select id="nacionalidadeJogador">
+      <option value="Aleatório">Aleatório</option>
+      <option value="🇧🇷 Brasil">🇧🇷 Brasil</option>
+      <option value="🇦🇷 Argentina">🇦🇷 Argentina</option>
+      <option value="🇵🇹 Portugal">🇵🇹 Portugal</option>
+      <option value="🇫🇷 França">🇫🇷 França</option>
+      <option value="🇪🇸 Espanha">🇪🇸 Espanha</option>
+      <option value="🇮🇹 Itália">🇮🇹 Itália</option>
+      <option value="🏴 Inglaterra">🏴 Inglaterra</option>
+      <option value="🇩🇪 Alemanha">🇩🇪 Alemanha</option>
+      <option value="🇺🇾 Uruguai">🇺🇾 Uruguai</option>
+    </select>
+
+    <select id="fotoJogador" onchange="mostrarUpload()">
+      <option value="Aleatório">Foto Aleatória</option>
+      <option value="Masculino">Masculino</option>
+      <option value="Feminino">Feminino</option>
+      <option value="Upload">Minha Foto</option>
+    </select>
+
+    <input type="file" id="uploadFoto" accept="image/*" style="display:none;">
+
+    <button onclick="iniciarQuiz()">Começar Quiz</button>
+  </div>
+
+  <div id="quiz-container" class="quiz" style="display:none;"></div>
+  <div id="resultado"></div>
+  <button id="downloadBtn" onclick="baixarCarta()">📥 Baixar Carta</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
